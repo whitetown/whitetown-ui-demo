@@ -10,14 +10,14 @@ import {
     Container,
     Content,
     Space,
+    Segments,
     Button,
     Text,
     Icon,
     Row,
     Card,
+    Col,
 } from 'whitetown-ui'
-
-import { getTheme } from 'whitetown-ui'
 
 import randomIcon from './randomIcon'
 
@@ -101,26 +101,29 @@ export default class Buttons extends WhiteTownComponent {
         return (
             <Container>
                 <Content sm>
+                    <Segments value={this.state.size}
+                        xs={this.state.size===0} sm={this.state.size===1} md={this.state.size===2} lg={this.state.size===3}
+                        items={[ 'xs', 'sm', 'md', 'lg', ]}
+                        onChangeSegment={(index)=>this.setSize(index)} />
+
                     <Card>
-                        <Row>
-                            <Button full onPress={()=>this.setSize(0)} ><Text>xs</Text></Button>
-                            <Button full onPress={()=>this.setSize(1)} ><Text>sm</Text></Button>
-                            <Button full onPress={()=>this.setSize(2)} ><Text>md</Text></Button>
-                            <Button full onPress={()=>this.setSize(3)} ><Text>lg</Text></Button>
-                        </Row>
-                    </Card>
-                    <Card>
-                        <Row xs style={{ alignItems:'center', justifyContent:'space-between' }}>
-                            <Switch value={this.state.full} onValueChange={(value)=>this.setState({full: !this.state.full})} />
-                            <Switch value={this.state.bordered} onValueChange={(value)=>this.setState({bordered: !this.state.bordered})} />
-                            <Switch value={this.state.block} onValueChange={(value)=>this.setState({block: !this.state.block})} />
-                            <Switch value={this.state.rounded} onValueChange={(value)=>this.setState({rounded: !this.state.rounded})} />
-                        </Row>
-                        <Row xs style={{ alignItems:'center', justifyContent:'space-between' }}>
-                            <Text xs>full</Text>
-                            <Text xs>bordered</Text>
-                            <Text xs>block</Text>
-                            <Text xs>rounded</Text>
+                        <Row xs>
+                            <Col style={{ alignItems:'center' }}>
+                                <Switch value={this.state.full} onValueChange={(value)=>this.setState({full: !this.state.full})} />
+                                <Text xs>full</Text>
+                            </Col>
+                            <Col style={{ alignItems:'center' }}>
+                                <Switch value={this.state.bordered} onValueChange={(value)=>this.setState({bordered: !this.state.bordered})} />
+                                <Text xs>bordered</Text>
+                            </Col>
+                            <Col style={{ alignItems:'center' }}>
+                                <Switch value={this.state.block} onValueChange={(value)=>this.setState({block: !this.state.block})} />
+                                <Text xs>block</Text>
+                            </Col>
+                            <Col style={{ alignItems:'center' }}>
+                                <Switch value={this.state.rounded} onValueChange={(value)=>this.setState({rounded: !this.state.rounded})} />
+                                <Text xs>rounded</Text>
+                            </Col>
                         </Row>
                     </Card>
                     <Card>

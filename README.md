@@ -5,9 +5,9 @@ How to use [whitetown-ui](https://github.com/whitetown/whitetown-ui) component l
 Displays basic components.
 
 <p align="center">
-<img src="https://github.com/whitetown/whitetown-ui-demo/blob/master/screenshots/ios-ui.gif" alt="ios demo">
+<img src="https://raw.githubusercontent.com/whitetown/whitetown-ui-demo/master/screenshots/ios-ui.gif" alt="ios demo">
 <br/>
-<img src="https://github.com/whitetown/whitetown-ui-demo/blob/master/screenshots/android-ui.gif" alt="android demo">
+<img src="https://raw.githubusercontent.com/whitetown/whitetown-ui-demo/master/screenshots/android-ui.gif" alt="android demo">
 </p>
 
 # installation and so on
