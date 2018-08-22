@@ -47,6 +47,7 @@ export default class MainMenu extends WhiteTownComponent {
                     <MenuItem icon={'ios-today'} title={'Forms'} onPress={()=>this.openDetails('Forms')} />
                     <MenuItem icon={'ios-aperture'} title={'Icons and Texts'} onPress={()=>this.openDetails('IconsTexts')} />
                     <MenuItem icon={'ios-keypad'} title={'Top scrollable tabs'} onPress={()=>this.openDetails('Tabs')} />
+                    <MenuItem icon={'ios-card'} title={'Headers'} onPress={()=>this.openDetails('Headers')} />
 
                 </Content>
             </Container>

@@ -18,7 +18,7 @@ install dependencies:
 yarn
 ```
 
-link react-native-vector-icons:
+check that react-native-vector-icons are installed, if not link react-native-vector-icons:
 
 ```shell
 react-native link

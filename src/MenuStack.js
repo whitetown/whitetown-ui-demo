@@ -12,6 +12,7 @@ import Avatars from './Avatars'
 import Forms from './Forms'
 import IconsTexts from './IconsTexts'
 import Tabs from './Tabs'
+import Headers from './Headers'
 
 const MenuStack = createStackNavigator({
     MainMenu:       MainMenu,
@@ -22,6 +23,7 @@ const MenuStack = createStackNavigator({
     Forms:          Forms,
     IconsTexts:     IconsTexts,
     Tabs:           Tabs,
+    Headers:        Headers,
 })
 
 export default MenuStack
